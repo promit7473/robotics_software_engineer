@@ -11,6 +11,30 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+include_directories(include)
+
+add_executable(
+    task1
+    src/task_1.cpp
+)
+
+add_executable(
+    task2
+    src/task_2.cpp
+)
+
+add_executable(
+    task3
+    src/task_3.cpp
+)
+install(
+  TARGETS task1
+  TARGETS task2
+  TARGETS task3
+  DESTINATION lib/${PROJECT_NAME}
+)
+
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights
