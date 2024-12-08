@@ -15,18 +15,18 @@ module_2_assignment/
 │   └── multi_turtlebot3_controller.cpp # Multi-Robot Controller
 │
 ├── launch/
-│   ├── task2_turtle_bot_drive.launch.py    # Task 2 Launch File
-│   ├── task3_assignment.launch.py          # Task 3 Turtlesim Launch
-│   ├── task4_assignment.launch.py        # Task 4 Parametric Launch 
-│   ├── multi_turtle_bot_entity.launch.py # Turtlebot3 Spawning Launch 
-│   └── multi_turtlebot_service_call.launch.py  # Alternative Turtlebot3 
+│   ├── task2_turtle_bot_drive.launch.py        # Task 2 Launch File
+│   ├── task3_assignment.launch.py              # Task 3 Turtlesim Launch File
+│   ├── task4_assignment.launch.py              # Task 4 Parametric Launch File
+│   ├── multi_turtle_bot_entity.launch.py       # Turtlebot3 Spawning Launch File
+│   └── multi_turtlebot_service_call.launch.py  # Alternative Turtlebot3 File 
 │
 └── README.md
 ```
 
 ## Tasks Implemented
 
-### Task 1: Custom ROS 2 Node - Motion Patterns
+## Task 1: Custom ROS 2 Node - Motion Patterns
 Implemented two motion types:
 - **Circular Motion**: Turtle moves in a perfect circle.
 - **Logarithmic Spiral Motion**: Turtle follows a logarithmic spiral path.
@@ -36,19 +36,19 @@ Configurable parameters:
 - Radius/Scaling factor
 - Linear velocity
 
-### Task 2: Launch File Configuration
+## Task 2: Launch File Configuration
 Created a launch file to simultaneously start:
 - Turtlesim simulation
 - Custom ROS 2 node
 
 Supports dynamic parameter configuration.
 
-### Task 3: Multi-Turtle Simulation
+## Task 3: Multi-Turtle Simulation
 - Spawned 5 turtles diagonally in Turtlesim.
 - Implemented back-and-forth movement for middle turtles.
 - Used ROS 2 services for turtle spawning and simulation control.
 
-### Task 4: Dynamic Parameter Control
+## Task 4: Dynamic Parameter Control
 Added ROS 2 parameters to dynamically modify:
 - Linear speed
 - Angular speed
