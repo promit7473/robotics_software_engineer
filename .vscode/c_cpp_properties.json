@@ -1,0 +1,22 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/mhpromit7473/Workspaces/ros2_py_ws/install/udemy_ros2_pkg/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/module_1_assignment/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

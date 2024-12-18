@@ -1,0 +1,221 @@
+[0.033s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/module_2_assignment -DCMAKE_INSTALL_PREFIX=/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment
+[0.135s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.135s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.135s]   CMake.
+[0.136s] 
+[0.136s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.136s]   CMake that the project does not need compatibility with older versions.
+[0.136s] 
+[0.136s] [0m
+[0.189s] -- The C compiler identification is GNU 12.3.0
+[0.260s] -- The CXX compiler identification is GNU 12.3.0
+[0.271s] -- Detecting C compiler ABI info
+[0.347s] -- Detecting C compiler ABI info - done
+[0.368s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.368s] -- Detecting C compile features
+[0.369s] -- Detecting C compile features - done
+[0.381s] -- Detecting CXX compiler ABI info
+[0.490s] -- Detecting CXX compiler ABI info - done
+[0.506s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.507s] -- Detecting CXX compile features
+[0.507s] -- Detecting CXX compile features - done
+[0.520s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.727s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.843s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.888s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.893s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.902s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.924s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.959s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.014s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.019s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.155s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[1.206s] -- Found FastRTPS: /opt/ros/humble/include
+[1.277s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.301s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.374s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.376s] -- Found Threads: TRUE
+[1.450s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.465s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.476s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2")
+[1.478s] -- Checking for module 'bullet>=2.82'
+[1.491s] --   Found bullet, version 3.05
+[1.622s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0")
+[1.665s] -- Found assimp: /usr/include (found version "5.2.0")
+[1.666s] [33mCMake Warning (dev) at /usr/share/dart/cmake/DARTFindBoost.cmake:20 (find_package):
+[1.666s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.666s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.666s]   set the policy and suppress this warning.
+[1.666s] 
+[1.666s] Call Stack (most recent call first):
+[1.666s]   /usr/share/dart/cmake/dart_dartComponent.cmake:6 (include)
+[1.666s]   /usr/share/dart/cmake/DARTConfig.cmake:73 (include)
+[1.666s]   /usr/share/dart/cmake/DARTConfig.cmake:133 (dart_traverse_components)
+[1.666s]   /usr/share/dart/cmake/DARTConfig.cmake:181 (dart_package_init)
+[1.666s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:166 (find_package)
+[1.666s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[1.666s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[1.666s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.666s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[1.666s]   CMakeLists.txt:17 (find_package)
+[1.666s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.666s] [0m
+[1.695s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart
+[1.702s] [33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:197 (find_package):
+[1.702s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.702s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.702s]   set the policy and suppress this warning.
+[1.702s] 
+[1.702s] Call Stack (most recent call first):
+[1.702s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[1.702s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[1.702s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.702s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[1.702s]   CMakeLists.txt:17 (find_package)
+[1.702s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.702s] [0m
+[1.735s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time
+[1.765s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4")
+[1.772s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.784s] -- Searching for dependencies of ignition-math6
+[1.787s] -- Looking for OGRE...
+[1.788s] -- OGRE_PREFIX_WATCH changed.
+[1.793s] -- Checking for module 'OGRE'
+[1.804s] --   Found OGRE, version 1.9.0
+[1.836s] -- Found Ogre Ghadamon (1.9.0)
+[1.846s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.846s] [33mCMake Warning (dev) at /usr/share/OGRE/cmake/modules/FindOGRE.cmake:309 (find_package):
+[1.846s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.846s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.846s]   set the policy and suppress this warning.
+[1.846s] 
+[1.846s] Call Stack (most recent call first):
+[1.846s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:213 (find_package)
+[1.846s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[1.847s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[1.847s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.847s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[1.847s]   CMakeLists.txt:17 (find_package)
+[1.847s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.847s] [0m
+[1.850s] [33mCMake Warning (dev) at /usr/share/OGRE/cmake/modules/FindOGRE.cmake:318 (find_package):
+[1.850s]   Policy CMP0167 is not set: The FindBoost module is removed.  Run "cmake
+[1.850s]   --help-policy CMP0167" for policy details.  Use the cmake_policy command to
+[1.850s]   set the policy and suppress this warning.
+[1.851s] 
+[1.851s] Call Stack (most recent call first):
+[1.851s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:213 (find_package)
+[1.851s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[1.851s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[1.851s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[1.851s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[1.851s]   CMakeLists.txt:17 (find_package)
+[1.851s] This warning is for project developers.  Use -Wno-dev to suppress it.
+[1.851s] [0m
+[1.854s] -- Looking for OGRE_Paging...
+[1.862s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.862s] -- Looking for OGRE_Terrain...
+[1.869s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.869s] -- Looking for OGRE_Property...
+[1.876s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.876s] -- Looking for OGRE_RTShaderSystem...
+[1.885s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.885s] -- Looking for OGRE_Volume...
+[1.898s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.898s] -- Looking for OGRE_Overlay...
+[1.914s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.072s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.074s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.074s] -- Searching for dependencies of ignition-transport8
+[2.088s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3")
+[2.097s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.101s] -- Checking for module 'libzmq >= 4'
+[2.115s] --   Found libzmq, version 4.3.4
+[2.152s] -- Found ZeroMQ: TRUE (Required is at least version "4")
+[2.159s] -- Checking for module 'uuid'
+[2.170s] --   Found uuid, version 2.37.2
+[2.196s] -- Found UUID: TRUE
+[2.199s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.199s] -- Searching for dependencies of ignition-msgs5
+[2.217s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.222s] -- Checking for module 'tinyxml2'
+[2.234s] --   Found tinyxml2, version 9.0.0
+[2.264s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.267s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.267s] -- Searching for dependencies of ignition-common3
+[2.267s] -- Looking for dlfcn.h - found
+[2.268s] -- Looking for libdl - found
+[2.269s] -- Found DL: TRUE
+[2.281s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0")
+[2.281s] -- Searching for <ignition-common3> component [graphics]
+[2.283s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.284s] -- Searching for dependencies of ignition-common3-graphics
+[2.284s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.288s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.288s] -- Searching for dependencies of ignition-fuel_tools4
+[2.372s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")
+[2.376s] [0mCMake Deprecation Warning at /usr/lib/x86_64-linux-gnu/cmake/jsoncpp/jsoncppConfig.cmake:2 (cmake_policy):
+[2.377s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[2.377s]   CMake.
+[2.377s] 
+[2.377s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[2.377s]   CMake that the project does not need compatibility with older versions.
+[2.377s] Call Stack (most recent call first):
+[2.377s]   /usr/share/cmake/ignition-cmake2/cmake2/FindJSONCPP.cmake:34 (find_package)
+[2.377s]   /usr/lib/x86_64-linux-gnu/cmake/ignition-fuel_tools4/ignition-fuel_tools4-config.cmake:94 (find_package)
+[2.377s]   /usr/lib/x86_64-linux-gnu/cmake/gazebo/gazebo-config.cmake:251 (find_package)
+[2.377s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_dev-extras.cmake:3 (find_package)
+[2.377s]   /opt/ros/humble/share/gazebo_dev/cmake/gazebo_devConfig.cmake:41 (include)
+[2.377s]   /opt/ros/humble/share/gazebo_ros/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)
+[2.377s]   /opt/ros/humble/share/gazebo_ros/cmake/gazebo_rosConfig.cmake:41 (include)
+[2.377s]   CMakeLists.txt:17 (find_package)
+[2.377s] 
+[2.377s] [0m
+[2.383s] -- Checking for module 'jsoncpp'
+[2.396s] --   Found jsoncpp, version 1.9.5
+[2.432s] -- Found JSONCPP: TRUE
+[2.439s] -- Checking for module 'libzip'
+[2.450s] --   Found libzip, version 1.7.3
+[2.478s] -- Found ZIP: TRUE
+[2.478s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.478s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.479s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.484s] -- Gazebo version: 11.10
+[2.485s] -- Checking for module 'tbb'
+[2.498s] --   Found tbb, version 2021.5.0
+[2.535s] -- Found turtlebot3_gazebo: 2.2.5 (/opt/ros/humble/share/turtlebot3_gazebo/cmake)
+[2.642s] -- Configuring done (2.5s)
+[2.667s] -- Generating done (0.0s)
+[2.674s] -- Build files have been written to: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment
+[2.686s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/module_2_assignment -DCMAKE_INSTALL_PREFIX=/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment
+[2.688s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --build /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment -- -j12 -l12
+[2.801s] [ 37%] [32mBuilding CXX object CMakeFiles/task1_drive_turtle.dir/src/task1_drive_turtle.cpp.o[0m
+[2.802s] [ 37%] [32mBuilding CXX object CMakeFiles/task3_driver.dir/src/task3_driver.cpp.o[0m
+[2.802s] [ 37%] [32mBuilding CXX object CMakeFiles/task4_driver.dir/src/task4_driver.cpp.o[0m
+[2.802s] [ 50%] [32mBuilding CXX object CMakeFiles/multi_turtlebot3_controller.dir/src/multi_turtlebot3_controller.cpp.o[0m
+[8.236s] [ 62%] [32m[1mLinking CXX executable task1_drive_turtle[0m
+[8.555s] [ 62%] Built target task1_drive_turtle
+[8.833s] [ 75%] [32m[1mLinking CXX executable task3_driver[0m
+[9.151s] [ 75%] Built target task3_driver
+[9.197s] [ 87%] [32m[1mLinking CXX executable task4_driver[0m
+[9.327s] [100%] [32m[1mLinking CXX executable multi_turtlebot3_controller[0m
+[9.552s] [100%] Built target task4_driver
+[9.569s] [100%] Built target multi_turtlebot3_controller
+[9.578s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --build /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment -- -j12 -l12
+[9.580s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --install /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment
+[9.749s] -- Install configuration: ""
+[9.749s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/module_2_assignment/task1_drive_turtle
+[9.751s] -- Set non-toolchain portion of runtime path of "/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/module_2_assignment/task1_drive_turtle" to ""
+[9.751s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/module_2_assignment/multi_turtlebot3_controller
+[9.753s] -- Set non-toolchain portion of runtime path of "/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/module_2_assignment/multi_turtlebot3_controller" to ""
+[9.753s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/module_2_assignment/task3_driver
+[9.755s] -- Set non-toolchain portion of runtime path of "/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/module_2_assignment/task3_driver" to ""
+[9.755s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/module_2_assignment/task4_driver
+[9.756s] -- Set non-toolchain portion of runtime path of "/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/lib/module_2_assignment/task4_driver" to ""
+[9.756s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/launch
+[9.757s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/launch/multi_turtlebot_service_call.launch.py
+[9.757s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/launch/multi_turtle_bot_entity.launch.py
+[9.757s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/launch/task4_assignment.launch.py
+[9.758s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/launch/task2_turtle_bot_drive.launch.py
+[9.758s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_2_assignment/share/module_2_assignment/launch/task3_assignment.launch.py
+[9.761s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --install /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment

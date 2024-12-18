@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<robot name="simple_arm">
+
+  <!-- ============================ -->
+  <!--       MATERIALS              -->
+  <!-- ============================ -->
+  <material name="blue">
+    <color rgba="0.0 0.0 1.0 1.0"/>
+  </material>
+  <material name="green">
+    <color rgba="0.0 1.0 0.0 1.0"/>
+  </material>
+  <material name="red">
+    <color rgba="1.0 0.0 0.0 1.0"/>
+  </material>
+  <material name="yellow">
+    <color rgba="1.0 1.0 0.0 1.0"/>
+  </material>
+  <material name="grey">
+    <color rgba="0.5 0.5 0.5 1.0"/>
+  </material>
+
+  <!-- ============================ -->
+  <!--         LINKS                -->
+  <!-- ============================ -->
+  <link name="world"/>
+
+  <link name="base_link">
+    <visual>
+      <geometry>
+        <cylinder radius="0.1" length="0.2"/>
+      </geometry>
+      <material name="blue"/>
+    </visual>
+  </link>
+
+  <link name="link1">
+    <visual>
+      <origin xyz="0 0 0.25" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.05" length="0.5"/>
+      </geometry>
+      <material name="green"/>
+    </visual>
+  </link>
+
+  <link name="link2">
+    <visual>
+      <origin xyz="0 0 0.25" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.05" length="0.5"/>
+      </geometry>
+      <material name="red"/>
+    </visual>
+  </link>
+
+  <link name="link3">
+    <visual>
+      <origin xyz="0 0 0.25" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.05" length="0.5"/>
+      </geometry>
+      <material name="yellow"/>
+    </visual>
+  </link>
+<link name="finger1">
+  <visual>
+    <!-- Rotate the cylinder 90 degrees (π/2 = 1.57) around the Z-axis -->
+    <origin xyz="0 0 0.05" rpy="0 0 1.57"/>
+    <geometry>
+      <cylinder radius="0.02" length="0.1"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+</link>
+
+<link name="finger2">
+  <visual>
+    <!-- Rotate the cylinder 90 degrees (π/2 = 1.57) around the Z-axis -->
+    <origin xyz="0 0 0.05" rpy="0 0 1.57"/>
+    <geometry>
+      <cylinder radius="0.02" length="0.1"/>
+    </geometry>
+    <material name="grey"/>
+  </visual>
+</link>
+
+
+  <!-- ============================ -->
+  <!--         JOINTS               -->
+  <!-- ============================ -->
+  <joint name="base_joint" type="continuous">
+    <parent link="world"/>
+    <child link="base_link"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <joint name="joint1" type="revolute">
+    <parent link="base_link"/>
+    <child link="link1"/>
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <axis xyz="0 0 1"/>
+    <limit effort="10" velocity="1.0" lower="-1.57" upper="1.57"/>
+  </joint>
+
+  <joint name="joint2" type="revolute">
+    <parent link="link1"/>
+    <child link="link2"/>
+    <origin xyz="0 0 0.5" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="10" velocity="1.0" lower="-1.57" upper="1.57"/>
+  </joint>
+
+  <joint name="joint3" type="revolute">
+    <parent link="link2"/>
+    <child link="link3"/>
+    <origin xyz="0 0 0.5" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="10" velocity="1.0" lower="-1.57" upper="1.57"/>
+  </joint>
+
+    <joint name="finger_joint1" type="prismatic">
+    <parent link="link3"/>
+    <child link="finger1"/>
+    <origin xyz="0.05 0 0.5" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="10" velocity="1.0" lower="0.0" upper="0.1"/>
+  </joint>
+
+  <joint name="finger_joint2" type="prismatic">
+    <parent link="link3"/>
+    <child link="finger2"/>
+    <origin xyz="-0.05 0 0.5" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/>
+    <limit effort="10" velocity="1.0" lower="0.0" upper="-0.1"/>
+  </joint>
+
+</robot>

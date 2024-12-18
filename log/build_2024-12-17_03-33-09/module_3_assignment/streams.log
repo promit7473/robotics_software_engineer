@@ -1,0 +1,71 @@
+[0.033s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/module_3_assignment -DCMAKE_INSTALL_PREFIX=/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment
+[0.134s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.134s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.134s]   CMake.
+[0.134s] 
+[0.134s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.134s]   CMake that the project does not need compatibility with older versions.
+[0.134s] 
+[0.135s] [0m
+[0.182s] -- The C compiler identification is GNU 12.3.0
+[0.261s] -- The CXX compiler identification is GNU 12.3.0
+[0.268s] -- Detecting C compiler ABI info
+[0.345s] -- Detecting C compiler ABI info - done
+[0.367s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.367s] -- Detecting C compile features
+[0.367s] -- Detecting C compile features - done
+[0.378s] -- Detecting CXX compiler ABI info
+[0.467s] -- Detecting CXX compiler ABI info - done
+[0.494s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.496s] -- Detecting CXX compile features
+[0.496s] -- Detecting CXX compile features - done
+[0.508s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.702s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.834s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[0.889s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.894s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.903s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.921s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.956s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.035s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.037s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.170s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")
+[1.215s] -- Found FastRTPS: /opt/ros/humble/include
+[1.290s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.298s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.389s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.390s] -- Found Threads: TRUE
+[1.489s] -- Found tf2_ros: 0.25.9 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.697s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.764s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.765s] -- Added test 'lint_cmake' to check CMake code style
+[1.765s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.766s] -- Added test 'xmllint' to check XML markup files
+[1.768s] -- Configuring done (1.6s)
+[1.774s] -- Generating done (0.0s)
+[1.776s] -- Build files have been written to: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment
+[1.785s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/module_3_assignment -DCMAKE_INSTALL_PREFIX=/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment
+[1.786s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --build /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment -- -j12 -l12
+[1.875s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --build /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment -- -j12 -l12
+[1.877s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --install /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment
+[1.932s] -- Install configuration: ""
+[1.932s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/launch
+[1.932s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/launch/rviz.launch.py
+[1.932s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/urdf
+[1.932s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/urdf/task1.urdf
+[1.933s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/ament_index/resource_index/package_run_dependencies/module_3_assignment
+[1.933s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/ament_index/resource_index/parent_prefix_path/module_3_assignment
+[1.933s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/environment/ament_prefix_path.sh
+[1.933s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/environment/ament_prefix_path.dsv
+[1.933s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/environment/path.sh
+[1.934s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/environment/path.dsv
+[1.934s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/local_setup.bash
+[1.934s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/local_setup.sh
+[1.934s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/local_setup.zsh
+[1.934s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/local_setup.dsv
+[1.934s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.dsv
+[1.934s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/ament_index/resource_index/packages/module_3_assignment
+[1.934s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/cmake/module_3_assignmentConfig.cmake
+[1.935s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/cmake/module_3_assignmentConfig-version.cmake
+[1.935s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_3_assignment/share/module_3_assignment/package.xml
+[1.936s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --install /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_3_assignment

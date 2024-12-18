@@ -1,0 +1,141 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 32,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 39,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/module_2_assignment",
+			"paths" : 
+			[
+				"task1_drive_turtle"
+			],
+			"targetId" : "task1_drive_turtle::@6890427a1f51a3e7e1df",
+			"targetIndex" : 2,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "task1_drive_turtle::@6890427a1f51a3e7e1df",
+				"index" : 2
+			},
+			"destination" : "lib/module_2_assignment",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/module_2_assignment",
+			"paths" : 
+			[
+				"multi_turtlebot3_controller"
+			],
+			"targetId" : "multi_turtlebot3_controller::@6890427a1f51a3e7e1df",
+			"targetIndex" : 1,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "multi_turtlebot3_controller::@6890427a1f51a3e7e1df",
+				"index" : 1
+			},
+			"destination" : "lib/module_2_assignment",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/module_2_assignment",
+			"paths" : 
+			[
+				"task3_driver"
+			],
+			"targetId" : "task3_driver::@6890427a1f51a3e7e1df",
+			"targetIndex" : 3,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "task3_driver::@6890427a1f51a3e7e1df",
+				"index" : 3
+			},
+			"destination" : "lib/module_2_assignment",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib/module_2_assignment",
+			"paths" : 
+			[
+				"task4_driver"
+			],
+			"targetId" : "task4_driver::@6890427a1f51a3e7e1df",
+			"targetIndex" : 4,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "task4_driver::@6890427a1f51a3e7e1df",
+				"index" : 4
+			},
+			"destination" : "lib/module_2_assignment",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/module_2_assignment",
+			"paths" : 
+			[
+				"launch"
+			],
+			"type" : "directory"
+		}
+	],
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	}
+}

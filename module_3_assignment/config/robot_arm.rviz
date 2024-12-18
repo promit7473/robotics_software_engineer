@@ -1,0 +1,15 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Views
+    Name: Views
+
+Visualization Manager:
+  Displays:
+    - Name: Global Options
+      Class: rviz_common/GlobalOptions
+      Fixed Frame: base_link  # Match your robot's root link frame
+
+    - Name: RobotModel
+      Class: rviz_default_plugins/RobotModel
+      Robot Description: robot_description  # Required for robot_state_publisher

@@ -1,0 +1,33 @@
+[0.059s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --build /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug -- -j12 -l12
+[0.189s] [ 50%] Built target mazeSolving
+[0.193s] [100%] Built target lineFollowing
+[0.212s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --build /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug -- -j12 -l12
+[0.218s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --install /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug
+[0.322s] -- Install configuration: ""
+[0.322s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/lib/robot_sensing_debug/mazeSolving
+[0.322s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/lib/robot_sensing_debug/lineFollowing
+[0.322s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug//launch
+[0.323s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug//launch/custom_sensors.launch.py
+[0.323s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug//launch/lidar_maze_solving.launch.py
+[0.323s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug//launch/camera_line_following.launch.py
+[0.323s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug//worlds
+[0.323s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug//worlds/maze.world
+[0.323s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug//worlds/line_following.world
+[0.323s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug//urdf
+[0.323s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug//urdf/diff_drive.urdf
+[0.324s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/ament_index/resource_index/package_run_dependencies/robot_sensing_debug
+[0.324s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/ament_index/resource_index/parent_prefix_path/robot_sensing_debug
+[0.324s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/environment/ament_prefix_path.sh
+[0.324s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/environment/ament_prefix_path.dsv
+[0.324s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/environment/path.sh
+[0.324s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/environment/path.dsv
+[0.324s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/local_setup.bash
+[0.324s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/local_setup.sh
+[0.325s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/local_setup.zsh
+[0.325s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/local_setup.dsv
+[0.325s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.dsv
+[0.325s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/ament_index/resource_index/packages/robot_sensing_debug
+[0.325s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/cmake/robot_sensing_debugConfig.cmake
+[0.325s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/cmake/robot_sensing_debugConfig-version.cmake
+[0.325s] -- Up-to-date: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/robot_sensing_debug/share/robot_sensing_debug/package.xml
+[0.407s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --install /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/robot_sensing_debug

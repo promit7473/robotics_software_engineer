@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<robot name="robotic_arm">
+
+  <!-- Links -->
+  <link name="base"/>
+  <link name="link1"/>
+  <link name="link2"/>
+  <link name="link3"/>
+
+  <!-- Joints -->
+
+  <!-- Joint 1: Between base and link1 -->
+  <joint name="joint1" type="continuous">
+    <origin xyz="0 0 0.1" rpy="0 0 0"/>
+    <parent link="base"/>
+    <child link="link1"/>
+    <axis xyz="0 0 1"/>
+  </joint>
+
+  <!-- Joint 2: Between link1 and link2 -->
+  <joint name="joint2" type="continuous">
+    <origin xyz="0 0 0.5" rpy="0 0 0"/>
+    <parent link="link1"/>
+    <child link="link2"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+
+  <!-- Joint 3: Between link2 and link3 -->
+  <joint name="joint3" type="continuous">
+    <origin xyz="0 0.2 0" rpy="0 0 0"/>
+    <parent link="link2"/>
+    <child link="link3"/>
+    <axis xyz="1 0 0"/>
+  </joint>
+
+</robot>

@@ -1,0 +1,106 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-eccd6440c6dcbaa62d8f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "module_2_assignment",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "module_2_assignment_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_2_assignment_uninstall-f73dcd0c021d9bd543fd.json",
+					"name" : "module_2_assignment_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "multi_turtlebot3_controller::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-multi_turtlebot3_controller-28b756819ddcb0bee437.json",
+					"name" : "multi_turtlebot3_controller",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task1_drive_turtle::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task1_drive_turtle-f39c765cb25a6d5af31a.json",
+					"name" : "task1_drive_turtle",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task3_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task3_driver-261eaa3647cf4c86d897.json",
+					"name" : "task3_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "task4_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-task4_driver-03c276e2a12c1a235a52.json",
+					"name" : "task4_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-fdcc0f5893fde7737a14.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_2_assignment",
+		"source" : "/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/module_2_assignment"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

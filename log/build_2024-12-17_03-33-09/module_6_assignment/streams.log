@@ -1,0 +1,50 @@
+[0.033s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/module_6_assignment -DCMAKE_INSTALL_PREFIX=/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment
+[0.122s] [0mCMake Deprecation Warning at CMakeLists.txt:1 (cmake_minimum_required):
+[0.122s]   Compatibility with CMake < 3.10 will be removed from a future version of
+[0.122s]   CMake.
+[0.122s] 
+[0.122s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[0.122s]   CMake that the project does not need compatibility with older versions.
+[0.123s] 
+[0.125s] [0m
+[0.171s] -- The C compiler identification is GNU 12.3.0
+[0.248s] -- The CXX compiler identification is GNU 12.3.0
+[0.258s] -- Detecting C compiler ABI info
+[0.323s] -- Detecting C compiler ABI info - done
+[0.344s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.345s] -- Detecting C compile features
+[0.345s] -- Detecting C compile features - done
+[0.359s] -- Detecting CXX compiler ABI info
+[0.461s] -- Detecting CXX compiler ABI info - done
+[0.484s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.484s] -- Detecting CXX compile features
+[0.485s] -- Detecting CXX compile features - done
+[0.498s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.674s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[0.816s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.920s] -- Added test 'lint_cmake' to check CMake code style
+[0.920s] -- Added test 'xmllint' to check XML markup files
+[0.920s] -- Configuring done (0.8s)
+[0.925s] -- Generating done (0.0s)
+[0.928s] -- Build files have been written to: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment
+[0.947s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/module_6_assignment -DCMAKE_INSTALL_PREFIX=/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment
+[0.951s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --build /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j12 -l12
+[1.164s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --build /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment -- -j12 -l12
+[1.168s] Invoking command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --install /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment
+[1.249s] -- Install configuration: ""
+[1.250s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/ament_index/resource_index/package_run_dependencies/module_6_assignment
+[1.254s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/ament_index/resource_index/parent_prefix_path/module_6_assignment
+[1.255s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/environment/ament_prefix_path.sh
+[1.255s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/environment/ament_prefix_path.dsv
+[1.256s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/environment/path.sh
+[1.256s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/environment/path.dsv
+[1.257s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/local_setup.bash
+[1.257s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/local_setup.sh
+[1.258s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/local_setup.zsh
+[1.258s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/local_setup.dsv
+[1.258s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.dsv
+[1.259s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/ament_index/resource_index/packages/module_6_assignment
+[1.259s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/cmake/module_6_assignmentConfig.cmake
+[1.260s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/cmake/module_6_assignmentConfig-version.cmake
+[1.260s] -- Installing: /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/install/module_6_assignment/share/module_6_assignment/package.xml
+[1.261s] Invoked command in '/home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /home/mhpromit7473/.local/bin/cmake --install /home/mhpromit7473/assignment_ws/src/robotics_software_engineer/build/module_6_assignment
