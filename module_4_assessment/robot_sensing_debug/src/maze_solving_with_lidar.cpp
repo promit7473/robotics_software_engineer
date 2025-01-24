@@ -32,13 +32,17 @@ private:
     RCLCPP_INFO(this->get_logger(), "Front: %f, Right: %f, Left: %f",
                 frontObstacle, rightObstacle, leftObstacle);
 
-    if (frontObstacle < frontThreshold_ && rightObstacle < frontThreshold_ &&
-        leftObstacle < frontThreshold_) {
-      state_ = RobotState::OUT_OF_MAZE;
+    if (frontObstacle > frontThreshold_ && leftObstacle > frontThreshold_ && rightObstacle > frontThreshold_) {
+      state_ = RobotState::MOVING_STRAIGHT;
     } else if (frontObstacle > frontThreshold_) {
       state_ = leftObstacle > rightObstacle ? RobotState::TURNING_RIGHT
-                                            : RobotState::TURNING_LEFT;
+                                        : RobotState::TURNING_LEFT;
+    } else if (frontObstacle < frontThreshold_ && rightObstacle < frontThreshold_ &&
+           leftObstacle < frontThreshold_) {
+      state_ = RobotState::OUT_OF_MAZE;
     }
+
+
 
     geometry_msgs::msg::Twist command;
     switch (state_) {

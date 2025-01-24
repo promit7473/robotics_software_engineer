@@ -12,72 +12,79 @@
 
 class CameraSubscriber : public rclcpp::Node {
 public:
-  CameraSubscriber()
-  : Node("camera_subscriber_node"), _angularVel(0.3) {
-    this->declare_parameter<int>("lower_threshold", 200);
-    this->declare_parameter<int>("upper_threshold", 250);
-    _publisher = this->create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
-    _subscription = this->create_subscription<sensor_msgs::msg::Image>(
-      "/camera/image_raw", 10,
-      std::bind(&CameraSubscriber::cameraCallback, this, std::placeholders::_1));
-    RCLCPP_INFO(this->get_logger(), "\n------ Node Started -----\n");
-  }
+    CameraSubscriber()
+        : Node("CameraSubscriberNode"), angular_velocity_(0.3) {
+        declare_parameter<int>("lower_threshold", 200);
+        declare_parameter<int>("upper_threshold", 250);
+
+        cmd_vel_publisher_ = create_publisher<geometry_msgs::msg::Twist>("cmd_vel", 10);
+        image_subscription_ = create_subscription<sensor_msgs::msg::Image>(
+            "/camera/image_raw", 10,
+            std::bind(&CameraSubscriber::CameraCallback, this, std::placeholders::_1));
+
+        RCLCPP_INFO(get_logger(), "\n------ Node Started -----\n");
+    }
 
 private:
-  void cameraCallback(const sensor_msgs::msg::Image::SharedPtr cameraMsg) {
-    auto velocityMsg = geometry_msgs::msg::Twist();
-    cv_bridge::CvImagePtr cvPtr;
-    cvPtr = cv_bridge::toCvCopy(cameraMsg, "bgr8");
-    cv::Mat grayImage, cannyImage;
-    cv::cvtColor(cvPtr->image, grayImage, cv::COLOR_BGR2GRAY);
+    void CameraCallback(const sensor_msgs::msg::Image::SharedPtr image_message) {
+        auto twist_message = geometry_msgs::msg::Twist();
+        cv_bridge::CvImagePtr cv_image_ptr;
 
-    int upperThreshold = this->get_parameter("upper_threshold").as_int();
-    int lowerThreshold = this->get_parameter("lower_threshold").as_int();
-    cv::Canny(grayImage, cannyImage, lowerThreshold, upperThreshold);
+        try {
+            cv_image_ptr = cv_bridge::toCvCopy(image_message, "bgr8");
+        } catch (cv_bridge::Exception &e) {
+            RCLCPP_ERROR(get_logger(), "cv_bridge exception: %s", e.what());
+            return;
+        }
 
-    // Process Canny image to find the line's midpoint
-    int row = 150, column = 0;
-    cv::Mat roi = cannyImage(cv::Range(row, row + 240), cv::Range(column, column + 640));
+        cv::Mat gray_image, canny_image;
+        cv::cvtColor(cv_image_ptr->image, gray_image, cv::COLOR_BGR2GRAY);
 
-    std::vector<int> edge;
-    for (int i = 0; i < 640; ++i) {
-      if (roi.at<uchar>(160, i) == 255) {
-        edge.push_back(i);
-      }
+        int upper_threshold = get_parameter("upper_threshold").as_int();
+        int lower_threshold = get_parameter("lower_threshold").as_int();
+        cv::Canny(gray_image, canny_image, lower_threshold, upper_threshold);
+
+        // Process Canny image to find the line's midpoint
+        const int row = 150;
+        const int column = 0;
+        cv::Mat roi = canny_image(cv::Range(row, row + 240), cv::Range(column, column + 640));
+
+        std::vector<int> edges;
+        for (int i = 0; i < roi.cols; ++i) {
+            if (roi.at<uchar>(160, i) == 255) {
+                edges.push_back(i);
+            }
+        }
+
+        if (!edges.empty()) {
+            int mid_area = edges.back() - edges.front();
+            int line_midpoint = edges.front() + mid_area / 2;
+            int robot_midpoint = roi.cols / 2;
+
+            // Calculate error and adjust robot's direction
+            double error = robot_midpoint - line_midpoint;
+            twist_message.linear.x = 0.1;
+            twist_message.angular.z = (error < 0) ? -angular_velocity_ : angular_velocity_;
+
+            cmd_vel_publisher_->publish(twist_message);
+
+            // Visualization
+            cv::circle(roi, cv::Point(line_midpoint, 160), 2, cv::Scalar(255, 255, 255), -1);
+            cv::circle(roi, cv::Point(robot_midpoint, 160), 5, cv::Scalar(255, 255, 255), -1);
+            cv::imshow("Processed Image", roi);
+            cv::waitKey(1);
+        }
     }
 
-    if (!edge.empty()) {
-      int midArea = edge.back() - edge.front();
-      int midPoint = edge.front() + midArea / 2;
-      int robotMidPoint = 640 / 2;
+    rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr cmd_vel_publisher_;
+    rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr image_subscription_;
 
-      // Calculate error and adjust robot's direction
-      double error = robotMidPoint - midPoint;
-      velocityMsg.linear.x = 0.1;
-      if (error < 0) {
-        velocityMsg.angular.z = -_angularVel;
-      } else {
-        velocityMsg.angular.z = _angularVel;
-      }
-
-      _publisher->publish(velocityMsg);
-
-      // Visualization
-      cv::circle(roi, cv::Point(midPoint, 160), 2, cv::Scalar(255, 255, 255), -1);
-      cv::circle(roi, cv::Point(robotMidPoint, 160), 5, cv::Scalar(255, 255, 255), -1);
-      cv::imshow("Image", roi);
-      cv::waitKey(1);
-    }
-  }
-
-  rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr _publisher;
-  rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr _subscription;
-  double _angularVel;
+    double angular_velocity_;
 };
 
 int main(int argc, char **argv) {
-  rclcpp::init(argc, argv);
-  rclcpp::spin(std::make_shared<CameraSubscriber>());
-  rclcpp::shutdown();
-  return 0;
+    rclcpp::init(argc, argv);
+    rclcpp::spin(std::make_shared<CameraSubscriber>());
+    rclcpp::shutdown();
+    return 0;
 }
